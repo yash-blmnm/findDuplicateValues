@@ -12,3 +12,4 @@ Procedure to run the application :
 Use "yarn start" to run the application
 Use "yarn test" to run unit test cases
 
+![image](https://user-images.githubusercontent.com/27405419/51075274-5c970600-16af-11e9-8c73-3e2a036ee94b.png)
