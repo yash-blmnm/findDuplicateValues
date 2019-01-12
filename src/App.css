@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -30,3 +30,177 @@
     transform: rotate(360deg);
   }
 }
+
+.center {
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 15%;
+  background: #6cbbbd;
+  overflow-x: hidden;
+  flex: 1 1 0%;
+  padding: 20px;
+}
+
+.title {
+  margin-top: 0px;
+}
+.App .add {
+  color: #106910;
+  margin: 0px;
+  padding: 0px;
+  top: -1px;
+  position: relative;
+}
+
+.circle-icon {
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 15%;
+}
+
+.container {
+  margin: 0 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .column {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+  width: 31%;
+  min-height: 160px;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 6px;
+  position: relative;
+}
+
+.column .circle-icon {
+  margin-top: 18%;
+}
+
+.form {
+  padding: 10px;
+}
+.container .ui.form .field {
+  margin-bottom: 5px;
+}
+.container .ui.form .field>label {
+  width: 15%;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.container .ui.form .field>.input {
+  width: 75% !important;
+  display: inline-block;
+}
+
+.container .ui.form .field .ui.input input {
+  padding: 6px 10px;
+  width: 90%;
+}
+
+.container .ui.form .primary {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.results {
+  margin: 20px;
+}
+
+.duplicate {
+  background-color: #dfdfdf;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.results select {
+  margin: 0px 5px;
+}
+.delete-icon {
+  color: #8e0404;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    bottom: auto;
+    display: inline-block;
+    top: auto;
+    position: relative;
+    padding: 10px 20px;
+  }
+  .sidebar .title {
+    display: inline-block;
+  }
+  .sidebar .ui.form {
+    float: right;
+  }
+  .sidebar .ui.form .field, .sidebar .ui.form .add-property {
+    display: inline-block;
+  }
+  .sidebar .circle-icon {
+    margin-left: 5px;
+  }
+  .hide-in-mobile {
+    display: none;
+  }
+  .main {
+    margin: 0px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .container .column {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .column {
+    width: 80%;
+    margin: 10px 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .column {
+    width: 90%;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .sidebar .title {
+    display: block;
+  }
+  .sidebar .ui.form {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* width: 45%; */
