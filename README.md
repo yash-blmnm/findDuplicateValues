@@ -12,4 +12,3 @@ Procedure to run the application :
 Use "yarn start" to run the application
 Use "yarn test" to run unit test cases
 
-Screen Shot 2019-01-12 at 9.06.02 PM
