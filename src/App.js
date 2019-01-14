@@ -89,8 +89,8 @@ class App extends Component {
             {textAreaIds.map((i) => {
               return (
                 <Grid.Column mobile={16} tablet={8} computer={4} key={i}>
-                  <span className="delete-icon" data-product-id={i} onClick={this.deleteProduct} title="Delete Product"><Icon name='delete' /></span>
                   <div className={duplicateIndex.has(`product-${i}`) ? "duplicate" : ""}>
+                  <span className="delete-icon" data-product-id={i} onClick={this.deleteProduct} title="Delete Product"><Icon name='delete' /></span>
                     <Form name={`product-${i}`} onSubmit={this.editProduct}>
                       {properties.map((property) => {
                         return <Form.Input key={property} name={property} value={textAreaValues[`product-${i}`][property]} label={property} placeholder={property} onChange={this.inputUpdate} />
